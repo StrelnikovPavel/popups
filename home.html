@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221020133114">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page">
+			<button data-popup="#consultation">popup-1</button>
+			<button data-popup="#brif">popup-2</button>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<div id="consultation" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<form data-tabs action="#" class="popup__content consultation-content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="consultation-content__title">Запросить консультацию</div>
+				<div class="consultation-content__block block-consultation">
+					<div class="block-consultation__label">Тип обращения</div>
+					<div class="block-consultation__body">
+						<div class="checkbox">
+							<input id="c_1" class="checkbox__input" checked type="radio" value="1" name="type">
+							<label for="c_1" class="checkbox__label"><span class="checkbox__text">обсудить идею или ТЗ</span></label>
+						</div>
+						<div class="checkbox">
+							<input id="c_2" class="checkbox__input" type="radio" value="2" name="type">
+							<label for="c_2" class="checkbox__label"><span class="checkbox__text">подбор стратегии продвижения</span></label>
+						</div>
+						<div class="checkbox">
+							<input id="c_3" class="checkbox__input" type="radio" value="3" name="type">
+							<label for="c_3" class="checkbox__label"><span class="checkbox__text">консультация по технологиям</span></label>
+						</div>
+						<div class="checkbox">
+							<input id="c_4" class="checkbox__input" type="radio" value="4" name="type">
+							<label for="c_4" class="checkbox__label"><span class="checkbox__text">вопрос по цене проекта</span></label>
+						</div>
+					</div>
+				</div>
+				<div class="consultation-content__block block-consultation">
+					<div class="block-consultation__label">Выберите продолжительность консультации</div>
+					<div data-tabs-titles class="block-consultation__line">
+						<div data-tabs-title class="checkbox _tab-active">
+							<input id="c_6" data-error="Ошибка" class="checkbox__input" type="radio" value="6" name="duration">
+							<label for="c_6" class="checkbox__label"><span class="checkbox__text">15 минут</span></label>
+						</div>
+						<div data-tabs-title class="checkbox">
+							<input id="c_7" data-error="Ошибка" class="checkbox__input" type="radio" value="7" name="duration">
+							<label for="c_7" class="checkbox__label"><span class="checkbox__text">30 минут</span></label>
+						</div>
+						<div data-tabs-title class="checkbox">
+							<input id="c_8" data-error="Ошибка" class="checkbox__input" type="radio" value="8" name="duration">
+							<label for="c_8" class="checkbox__label"><span class="checkbox__text">45 минут</span></label>
+						</div>
+						<div data-tabs-title class="checkbox">
+							<input id="c_9" data-error="Ошибка" class="checkbox__input" type="radio" value="9" name="duration">
+							<label for="c_9" class="checkbox__label"><span class="checkbox__text">1 час</span></label>
+						</div>
+						<div data-tabs-title class="checkbox">
+							<input id="c_10" data-error="Ошибка" class="checkbox__input" type="radio" value="10" name="duration">
+							<label for="c_10" class="checkbox__label"><span class="checkbox__text">2 часа</span></label>
+						</div>
+					</div>
+				</div>
+				<div class="consultation-content__row">
+					<div class="consultation-content__block block-consultation">
+						<div class="block-consultation__label">Выберите способ коммуникации</div>
+						<div class="block-consultation__body block-consultation__body-g">
+							<div class="checkbox">
+								<input id="c_11" data-error="Ошибка" class="checkbox__input" type="radio" value="11" name="method">
+								<label for="c_11" class="checkbox__label"><span class="checkbox__text">Zoom</span></label>
+							</div>
+							<div class="checkbox">
+								<input id="c_12" data-error="Ошибка" class="checkbox__input" type="radio" value="12" name="method">
+								<label for="c_12" class="checkbox__label"><span class="checkbox__text">WhatsUp</span></label>
+							</div>
+							<div class="checkbox">
+								<input id="c_13" data-error="Ошибка" class="checkbox__input" type="radio" value="13" name="method">
+								<label for="c_13" class="checkbox__label"><span class="checkbox__text">Telergam</span></label>
+							</div>
+							<div class="checkbox">
+								<input id="c_14" data-error="Ошибка" class="checkbox__input" type="radio" value="14" name="method">
+								<label for="c_14" class="checkbox__label"><span class="checkbox__text">Viber</span></label>
+							</div>
+							<div class="checkbox">
+								<input id="c_15" data-error="Ошибка" class="checkbox__input" type="radio" value="15" name="method">
+								<label for="c_15" class="checkbox__label"><span class="checkbox__text">Messenger</span></label>
+							</div>
+							<div class="checkbox">
+								<input id="c_16" data-error="Ошибка" class="checkbox__input" type="radio" value="16" name="method">
+								<label for="c_16" class="checkbox__label"><span class="checkbox__text">Skype</span></label>
+							</div>
+						</div>
+					</div>
+					<div class="consultation-content__block block-consultation">
+						<div class="block-consultation__label">Укажите любой контакт для коммуникации</div>
+						<div class="block-consultation__input">
+							<div class="block-consultation__lead">Телефон / ник в мессенжере</div>
+							<input type="text" name="form[]" data-error="" class="input">
+						</div>
+					</div>
+				</div>
+				<div class="consultation-content__grid">
+					<div class="consultation-content__block block-consultation">
+						<div class="block-consultation__label">Комментарий</div>
+						<div class="block-consultation__input">
+							<div class="block-consultation__lead">Вкратце опишите Ваш проект</div>
+							<textarea name="comment" cols="30" rows="10"></textarea>
+						</div>
+					</div>
+					<div class="consultation-content__block block-consultation">
+						<div class="block-consultation__label">Подтверждение</div>
+						<div class="block-consultation__total total-consultation">
+							<div class="total-consultation__label">Итоговая цена</div>
+							<div data-tabs-body class="total-consultation__price">
+								<span data-tabs-item class="total-consultation__price-item">1 500 грн</span>
+								<span data-tabs-item class="total-consultation__price-item">2 500 грн</span>
+								<span data-tabs-item class="total-consultation__price-item">3 500 грн</span>
+								<span data-tabs-item class="total-consultation__price-item">4 500 грн</span>
+								<span data-tabs-item class="total-consultation__price-item">5 500 грн</span>
+							</div>
+						</div>
+						<div class="block-consultation__text">
+							<span>*</span>
+							<p> Нажимая кнопку отправки вы подтверждаете что даёте
+								своё соглашение на обработку ваших персональных данных</p>
+						</div>
+						<div class="block-consultation__text"><span>*</span>
+							<p>Если у вас есть котороткий вопрос или детально описанное ТЗ -
+								пишите на почту <a href="#">info@lexweb.studio</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="consultation-content__actions actions-consultation">
+					<a href="#" class="actions-consultation__request actions-consultation__button">Запросить платную консультацию</a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<div id="brif" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<form data-tabs action="#" class="popup__content links-popup">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="consultation-content__title links-popup__title">перечень услуг</div>
+				<div class="popup__link links-content">
+					<div class="links-content__label block-consultation__label">Перечень из 6 услуг</div>
+					<div class="links-content__items">
+						<a href="#" class="links-content__item"><span>Интернет-магазин</span></a>
+						<a href="#" class="links-content__item"><span>Веб-сайт</span></a>
+						<a href="#" class="links-content__item"><span>Мобильное приложение</span></a>
+						<a href="#" class="links-content__item"><span>Telegram-бот</span></a>
+						<a href="#" class="links-content__item"><span>Реклама Google Ads</span></a>
+						<a href="#" class="links-content__item"><span>Веб-дизайн (только)</span></a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20221020133114"></script>
+</body>
+
+</html>
